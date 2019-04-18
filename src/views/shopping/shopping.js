@@ -10,7 +10,7 @@ export default class Shopping extends Component {
       <div>
          <Router>
               <Header>
-                  <div class="returns">&lt;</div>
+                  <div className="returns">&lt;</div>
                   <div className="header-content">
                     <li><NavLink to="/shopping">国内购</NavLink></li>
                     <li><NavLink to="/shopping1" >海淘</NavLink></li>
