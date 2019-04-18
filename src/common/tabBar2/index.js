@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import { TabBar } from "antd-mobile";
+import {
+    Stealth,
+    Colours,
+    Nurse
+    
+}from "@views/class"
+
 export default class index extends Component {
     constructor(props) {
         super(props);
@@ -44,7 +51,7 @@ export default class index extends Component {
                         }}
                         data-seed="stealth"
                     >
-                        111
+                        <Stealth/>
                     </TabBar.Item>
                     <TabBar.Item
                         icon={
@@ -74,7 +81,7 @@ export default class index extends Component {
                         }}
                         data-seed="colours"
                     >
-                       222
+                        <Colours/>
                     </TabBar.Item>
                     <TabBar.Item
                         icon={
@@ -103,7 +110,7 @@ export default class index extends Component {
                             });
                         }}
                     >
-                        333
+                        <Nurse/>
                     </TabBar.Item>
                    
                 </TabBar>
