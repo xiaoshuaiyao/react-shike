@@ -11,7 +11,7 @@ import {withRouter} from "react-router-dom";
     }
     render() {
         return (
-            <div style={this.state.fullScreen ? { position: 'fixed', height: '100%', width: '100%', top: 0 } : { height: 400 }}>
+            <div style={this.state.fullScreen ? { position: 'fixed',width: '100%', bottom: 0 } : { height: 400 }}>
                 <TabBar
                     unselectedTintColor="#949494"
                     tintColor="#33A3F4"
