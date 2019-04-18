@@ -4,10 +4,12 @@ import Mine from "./mine"
 import Shopping from "./shopping"
 import Order from "./order"
 
+
 export {
     Home,
     Class,
     Mine,
     Shopping,
-    Order
+    Order,
+    
 }
