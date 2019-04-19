@@ -1,4 +1,7 @@
 import Home from "./home";
 
-
-export default Home
+import Service from "./service";
+export {
+    Home,
+    Service
+}
