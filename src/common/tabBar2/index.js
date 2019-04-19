@@ -4,10 +4,12 @@ import {
     Stealth,
     Colours,
     Nurse
-    
 }from "@views/class"
 
-export default class index extends Component {
+import {withRouter} from "react-router-dom";
+
+
+class TabBarClass extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,8 +18,9 @@ export default class index extends Component {
         };
     }
     render() {
+        console.log(this);
         return (
-            <div style={this.state.fullScreen ? { position: 'fixed', height: '100%', width: '100%', top: 0 } : { height: 400 }}>
+            <div style={this.state.fullScreen ? { position: 'fixed', width: '100%', bottom: 0 } : { height: 800 }}>
                 <TabBar
                     unselectedTintColor="#949494"
                     tintColor="#33A3F4"
@@ -38,7 +41,7 @@ export default class index extends Component {
                         selectedIcon={<div style={{
                             width: '1px',
                             height: '1px',
-                           
+                            
                         }}
                         />
                         }
@@ -48,6 +51,7 @@ export default class index extends Component {
                             this.setState({
                                 selectedTab: 'stealth',
                             });
+                            
                         }}
                         data-seed="stealth"
                     >
@@ -78,6 +82,8 @@ export default class index extends Component {
                             this.setState({
                                 selectedTab: 'colours',
                             });
+                            
+
                         }}
                         data-seed="colours"
                     >
@@ -108,6 +114,8 @@ export default class index extends Component {
                             this.setState({
                                 selectedTab: 'nurse',
                             });
+                            
+                            
                         }}
                     >
                         <Nurse/>
@@ -118,4 +126,4 @@ export default class index extends Component {
         );
     }
 }
-
+export default withRouter(TabBarClass);
