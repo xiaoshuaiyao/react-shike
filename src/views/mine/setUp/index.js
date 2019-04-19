@@ -1,4 +1,4 @@
-import SetUp from "./mine/setUp";
+import SetUp from "./setUp";
 
 
 export default SetUp
