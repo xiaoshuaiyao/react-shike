@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Header,Nologin,EmptyCart} from "./styledComponents";
-import {BrowsrRouter,HashRouter as Router,Route,Link,NavLink,Switch,Redirect} from "react-router-dom";
+import {HashRouter as Router,NavLink} from "react-router-dom";
 import Img from "../../image/kg.png"
 import Imgx from "../../image/x.png"
 import Imgy from "../../image/y.png"

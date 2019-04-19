@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Header = styled.div`
       background-color: #fff;
       position:fixed;
-      position:relative
+      position:relative;
       top:0;
       width:100%;
       height:0.375rem;
