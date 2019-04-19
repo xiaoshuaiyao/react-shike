@@ -20,7 +20,7 @@ class App extends Component {
         <Route path="/shopping" component={Shopping}/>
         <Route path="/order" component={Order}/>
       </Switch>
-      <TabBarCom/>     
+        <TabBarCom/>
       </Router>
     );
   }
