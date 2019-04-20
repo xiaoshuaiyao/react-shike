@@ -8,18 +8,20 @@ import collection from "@images/iocn_12.png"
 import news from "@images/iocn_14.png"
 import service from "@images/icon_1.png"
 import protect from "@images/iocn_9.png"
-import TabBarCom1 from "../../common/tabBar/index1.js";
+import {HashRouter as Router,Route,NavLink} from "react-router-dom"
+import TabBarCom1 from "../../common/tabBar/index1.js"
+
+
 export default class Mine extends Component {
   render() {
     return (
       <div>
-        <Header>
-          <div className="set"></div>
-          <HeaderSet />
-
-        </Header>
+      <Router>
+      <Header>       
+        <NavLink to="/mine/setUp"><HeaderSet/></NavLink>
+    </Header>
         <Log>
-          <div className="logo"></div>
+        <div className="logo"></div>
           <div className="logos">登录账号></div>
         </Log>
         <MIneOrder>
@@ -28,11 +30,11 @@ export default class Mine extends Component {
             <div className="ccc2">全部订单</div>
           </div>
           <div className="bbb">
-            <div className="bbb1"><div></div><div>待付款</div></div>
-            <div className="bbb2"><div></div><div>待发货</div></div>
-            <div className="bbb3"><div></div><div>待收货</div></div>
-            <div className="bbb4"><div></div><div>待评论</div></div>
-            <div className="bbb5"><div></div><div>售后</div></div>
+          <NavLink to="/order"><div className="bbb1"><div></div><div>待付款</div></div></NavLink>
+          <NavLink to="/order"><div className="bbb2"><div></div><div>待发货</div></div></NavLink>
+          <NavLink to="/order"><div className="bbb3"><div></div><div>待收货</div></div></NavLink>
+          <NavLink to="/order"><div className="bbb4"><div></div><div>待评论</div></div></NavLink>
+          <NavLink to="/order"><div className="bbb5"><div></div><div>售后</div></div></NavLink>
           </div>
         </MIneOrder>
         <List>
@@ -65,6 +67,7 @@ export default class Mine extends Component {
 
         </List>
         <TabBarCom1/>
+        </Router>
       </div>
     )
   }

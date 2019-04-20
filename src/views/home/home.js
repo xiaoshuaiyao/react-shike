@@ -8,6 +8,7 @@ import Img1 from "./img/haitaoIcon.png"
 import Img2 from "./img/timer.png"
 import Img3 from "./img/right.png"
 import BScroll from "better-scroll"
+import {HashRouter as Router,NavLink} from "react-router-dom"
 
 
 export default class Home extends Component {
@@ -41,7 +42,6 @@ export default class Home extends Component {
 
 
     
-
         <Header flag={this.state.flag}>
           <div className="one">
             <div className="one-img"><img src={Img}/></div>
@@ -135,12 +135,13 @@ export default class Home extends Component {
             <p className="right"><img src={Img3}/></p>
           </div>
         </Timer>
+        <Router>
         <Bottom>
           <div>
             <p>热卖单品</p>
             <ul>
               <li>
-                <div><img src="https://images.vsigo.cn/Products/contacts/210-210/201836164111763.jpg"/></div>
+                <div><NavLink to="/home/details"><img src="https://images.vsigo.cn/Products/contacts/210-210/201836164111763.jpg"/></NavLink></div>
                 <p>美若康绽美月抛2片</p>
                 <div><span>￥75</span><del>￥218</del></div>
               </li>
@@ -164,6 +165,7 @@ export default class Home extends Component {
             </ul>
           </div>
         </Bottom>
+        </Router>
         <TabBarCom/>
       </Max>
     )

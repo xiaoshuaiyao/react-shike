@@ -1,4 +1,4 @@
-import SetUp from "./setUp";
+import SetUp from "./setup";
 
 
 export default SetUp
