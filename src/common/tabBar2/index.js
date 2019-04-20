@@ -18,7 +18,7 @@ class TabBarClass extends Component {
         };
     }
     render() {
-        console.log(this);
+       // console.log(this);
         return (
             <div style={this.state.fullScreen ? { position: 'fixed', width: '100%', bottom: 0 } : { height: 800 }}>
                 <TabBar

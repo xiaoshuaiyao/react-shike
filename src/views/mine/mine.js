@@ -8,6 +8,7 @@ import collection from "@images/iocn_12.png"
 import news from "@images/iocn_14.png"
 import service from "@images/icon_1.png"
 import protect from "@images/iocn_9.png"
+import TabBarCom1 from "../../common/tabBar/index1.js";
 export default class Mine extends Component {
   render() {
     return (
@@ -63,6 +64,7 @@ export default class Mine extends Component {
           </Lists>
 
         </List>
+        <TabBarCom1/>
       </div>
     )
   }

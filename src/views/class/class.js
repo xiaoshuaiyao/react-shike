@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Header } from './styledComponent'
 import { Icon } from "antd-mobile"
 import TabBarClass from "@/common/tabBar2"
-
+import TabBarCom2 from "../../common/tabBar/index2.js";
 export default class Class extends Component {
   render() {
     return (
@@ -14,6 +14,7 @@ export default class Class extends Component {
           </div>
         </Header> 
           <TabBarClass />
+          <TabBarCom2/>
       </div>
     )
   }
