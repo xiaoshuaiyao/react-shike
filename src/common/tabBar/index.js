@@ -7,11 +7,15 @@ import {withRouter} from "react-router-dom";
         this.state = {
             selectedTab: 'home',
             fullScreen: true,
+             hidden:true
         };
     }
+        
+
+
     render() {
         return (
-            <div style={this.state.fullScreen ? { position: 'fixed',width: '100%', bottom: 0 } : { height: 400 }}>
+            <div style={this.state.fullScreen ? { position: 'fixed', width: '100%', bottom: 0 } : { height: 0 }}>
                 <TabBar
                     unselectedTintColor="#949494"
                     tintColor="#33A3F4"
@@ -39,7 +43,9 @@ import {withRouter} from "react-router-dom";
                             this.setState({
                                 selectedTab: 'home',
                             });
+                    
                             this.props.history.push("/home")
+                           
                         }}
                         data-seed="logId"
                     >
@@ -99,6 +105,7 @@ import {withRouter} from "react-router-dom";
                             this.setState({
                                 selectedTab: 'shopping',
                             });
+                            this.state.fullScreen = false;
                             this.props.history.push("/shopping")
                         }}
                     >
@@ -128,6 +135,7 @@ import {withRouter} from "react-router-dom";
                             this.setState({
                                 selectedTab: 'order',
                             });
+                            this.state.fullScreen = false;
                             this.props.history.push("/order")
                         }}
                     >
