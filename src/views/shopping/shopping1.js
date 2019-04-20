@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import {Header,Nologin,EmptyCart} from "./styledComponents";
-<<<<<<< HEAD
 import {BrowsrRouter,HashRouter as Router,Route,Link,NavLink,Switch,Redirect} from "react-router-dom";
-=======
-import {HashRouter as Router,Route,Link,NavLink,} from "react-router-dom";
->>>>>>> tongyao
 import Img from "../../image/kg.png"
 import Imgx from "../../image/x.png"
 import Imgy from "../../image/y.png"
@@ -14,11 +10,7 @@ export default class Shopping extends Component {
       <div>
          <Router>
               <Header>
-<<<<<<< HEAD
                   <div class="returns">&lt;</div>
-=======
-                  <div className="returns">&lt;</div>
->>>>>>> tongyao
                   <div className="header-content">
                     <li><NavLink to="/shopping">国内购</NavLink></li>
                     <li><NavLink to="/shopping1" >海淘</NavLink></li>

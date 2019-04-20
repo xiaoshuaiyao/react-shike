@@ -15,11 +15,7 @@ import {withRouter} from "react-router-dom";
 
     render() {
         return (
-<<<<<<< HEAD
-            <div style={this.state.fullScreen ? { position: 'fixed', width: '100%', bottom: 0 } : { height: 400 }}>
-=======
             <div style={this.state.fullScreen ? { position: 'fixed', width: '100%', bottom: 0 } : { height: 0 }}>
->>>>>>> tongyao
                 <TabBar
                     unselectedTintColor="#949494"
                     tintColor="#33A3F4"
@@ -47,7 +43,7 @@ import {withRouter} from "react-router-dom";
                             this.setState({
                                 selectedTab: 'home',
                             });
-                    
+                            this.state.fullScreen = true;
                             this.props.history.push("/home")
                            
                         }}
@@ -79,6 +75,7 @@ import {withRouter} from "react-router-dom";
                             this.setState({
                                 selectedTab: 'calss',
                             });
+                            this.state.fullScreen = true;
                             this.props.history.push("/class")
                         }}
                         data-seed="logId1"
