@@ -43,7 +43,7 @@ import {withRouter} from "react-router-dom";
                             this.setState({
                                 selectedTab: 'home',
                             });
-                    
+                            this.state.fullScreen = true;
                             this.props.history.push("/home")
                            
                         }}
@@ -75,6 +75,7 @@ import {withRouter} from "react-router-dom";
                             this.setState({
                                 selectedTab: 'calss',
                             });
+                            this.state.fullScreen = true;
                             this.props.history.push("/class")
                         }}
                         data-seed="logId1"

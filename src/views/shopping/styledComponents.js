@@ -82,7 +82,7 @@ export const Nologin = styled.div`
 
 export const EmptyCart = styled.div`
    
-    position:relative
+    position:relative;
     width:100%;
     height:3rem;   
     display:flex;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TabBarCom from "./common/tabBar";
 import Shopping1 from "./views/shopping/shopping1"
+import service from "./views/home/service/service"
 import{
       Home,
       Class,
@@ -20,9 +21,10 @@ class App extends Component {
         <Route path="/mine" component={Mine}/>
         <Route path="/shopping" component={Shopping}/>
         <Route path="/shopping1" component={Shopping1}/>
+        <Route path="/service" component={service}/>
         <Route path="/order" component={Order}/>
       </Switch>
-        <TabBarCom/>
+         <TabBarCom/>
       </Router>
     );
   }
