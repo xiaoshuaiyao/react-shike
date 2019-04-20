@@ -9,6 +9,7 @@ import news from "@images/iocn_14.png"
 import service from "@images/icon_1.png"
 import protect from "@images/iocn_9.png"
 import TabBarCom1 from "../../common/tabBar/index1.js";
+import {HashRouter as Router} from "react-router-dom"
 export default class Mine extends Component {
   render() {
     return (
