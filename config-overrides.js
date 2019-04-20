@@ -22,5 +22,7 @@ const {
             ["@actions"]:path.resolve(__dirname,"./src/actions"),
             ["@common"]:path.resolve(__dirname,"./src/common"),
             ["@apis"]:path.resolve(__dirname,"./src/apis"),
+            ["@images"]:path.resolve(__dirname,"./src/images"),
+
         })
     );

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TabBarCom from "./common/tabBar";
+// import TabBarCom from "./common/tabBar";
 import Shopping1 from "./views/shopping/shopping1"
 import service from "./views/home/service/service"
 import{
@@ -24,7 +24,7 @@ class App extends Component {
         <Route path="/service" component={service}/>
         <Route path="/order" component={Order}/>
       </Switch>
-         <TabBarCom/>
+         {/* <TabBarCom/> */}
       </Router>
     );
   }

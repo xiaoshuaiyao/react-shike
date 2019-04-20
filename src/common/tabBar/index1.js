@@ -5,7 +5,7 @@ import {withRouter} from "react-router-dom";
     constructor(props) {
         super(props);
         this.state = {
-            selectedTab: 'home',
+            selectedTab: 'mine',
              hidden:false
         };
     }
@@ -42,7 +42,7 @@ import {withRouter} from "react-router-dom";
                             this.setState({
                                 selectedTab: 'home',
                             });
-                            this.state.selectedTab="home"
+                            
                             this.props.history.push("/home")
                            
                         }}
@@ -74,7 +74,7 @@ import {withRouter} from "react-router-dom";
                             this.setState({
                                 selectedTab: 'class',
                             });
-                            this.state.selectedTab="class"
+                           
                             this.props.history.push("/class")
                         }}
                         data-seed="logId1"
@@ -165,7 +165,6 @@ import {withRouter} from "react-router-dom";
                         this.setState({
                             selectedTab: 'mine',
                         });
-                        this.state.selectedTab="mine"
                         this.props.history.push("/mine")
                     }}
                 >

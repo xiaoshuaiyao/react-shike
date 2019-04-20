@@ -3,11 +3,7 @@ import styled from "styled-components";
 export const Header = styled.div`
       background-color: #fff;
       position:fixed;
-<<<<<<< HEAD
-      position:relative
-=======
       position:relative;
->>>>>>> tongyao
       top:0;
       width:100%;
       height:0.375rem;
@@ -86,7 +82,7 @@ export const Nologin = styled.div`
 
 export const EmptyCart = styled.div`
    
-    position:relative
+    position:relative;
     width:100%;
     height:3rem;   
     display:flex;
